@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ffa1e4">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/emailET"
+            android:background="#6e004e"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/email"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+        <EditText
+            android:id="@+id/firstNameET"
+            android:background="#6e004e"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/firstname"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+        <EditText
+            android:id="@+id/lastNameET"
+            android:background="#6e004e"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/lastname"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/ageET"
+            android:background="#6e004e"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/age"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/addressET"
+            android:background="#6e004e"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/address"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="save"
+        android:id="@+id/saveButton"
+        android:background="#6e004e"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:text="@string/SAVE"
+        android:textColor="@color/white"
+        android:textSize="66sp"
+        android:textStyle="bold" />
+</FrameLayout>
